@@ -1,0 +1,6 @@
+framework module Pods_Port_Vale_Fc {
+  umbrella header "Pods-Port-Vale-Fc-umbrella.h"
+
+  export *
+  module * { export * }
+}
