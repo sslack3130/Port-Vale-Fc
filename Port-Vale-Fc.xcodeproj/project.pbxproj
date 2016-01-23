@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9BB65B1C52D2B6001ACC60 /* SignUPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BB65A1C52D2B6001ACC60 /* SignUPVC.swift */; };
 		0FBFBAB11C4EE5DB00E9E09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFBAB01C4EE5DB00E9E09B /* AppDelegate.swift */; };
 		0FBFBAB31C4EE5DB00E9E09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFBAB21C4EE5DB00E9E09B /* ViewController.swift */; };
 		0FBFBAB61C4EE5DB00E9E09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFBAB41C4EE5DB00E9E09B /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F9BB65A1C52D2B6001ACC60 /* SignUPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUPVC.swift; sourceTree = "<group>"; };
 		0FBFBAAD1C4EE5DB00E9E09B /* Port-Vale-Fc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Port-Vale-Fc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBFBAB01C4EE5DB00E9E09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FBFBAB21C4EE5DB00E9E09B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				0FBFBAB21C4EE5DB00E9E09B /* ViewController.swift */,
 				0FD5A5371C504F86002A4915 /* LiveScoresVC.swift */,
+				0F9BB65A1C52D2B6001ACC60 /* SignUPVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				0FBFBADC1C4F04A600E9E09B /* Constants.swift in Sources */,
 				0FD5A53C1C505026002A4915 /* DesignTabBar.swift in Sources */,
+				0F9BB65B1C52D2B6001ACC60 /* SignUPVC.swift in Sources */,
 				0FBFBAC71C4EF6D700E9E09B /* Login.swift in Sources */,
 				0FBFBADA1C4F047400E9E09B /* Design.swift in Sources */,
 				0FBFBADE1C4F081E00E9E09B /* DesignButton.swift in Sources */,

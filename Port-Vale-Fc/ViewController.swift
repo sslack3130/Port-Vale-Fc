@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
             
             self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
-        
         }
     }
     
@@ -35,6 +34,18 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
         alert.addAction(action)
         presentViewController(alert,animated: true, completion: nil)
+        
+    }
+    
+    func signUpAlert(title: String, msg: String) {
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            UIAlertAction in
+            self.performSegueWithIdentifier("SignUPVCSegue", sender: nil)
+        }
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
         
     }
     
@@ -52,21 +63,9 @@ class ViewController: UIViewController {
                         switch (errorCode) {
                             
                         case .UserDoesNotExist:
-                            
-                            DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: {error, result  in
-                                if error != nil {
-                                    self.showErrorAlert("Could not create account", msg: "Problem creating account!")
-                                }else {
-                                    
-                                    NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                    
-                                    DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
-                                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
-                                    
-                                }
-                            })
+                            self.signUpAlert("Ooops", msg: "We don't appear to have an account for you")
                         case .InvalidEmail:
-                            print("Handle invalid email")
+                            self.showErrorAlert("Ooops", msg: "Your email doesn't appear to be in the correct style")
                         case .InvalidPassword:
                             self.showErrorAlert("Ooops", msg: "Close! Please check the password!")
                         case .NetworkError:
@@ -76,8 +75,11 @@ class ViewController: UIViewController {
                         }
                     }
                 } else {
+                    
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
-                }
+                
+                    }
+                    
             })
    
         }else {
