@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import iAd
 
 class LiveScoresVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.canDisplayBannerAds = true
         
     }
 }

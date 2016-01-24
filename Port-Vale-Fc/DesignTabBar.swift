@@ -13,9 +13,9 @@ class DesignTabBar: UITabBarItem {
 
     override func awakeFromNib() {
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.grayColor()], forState:.Normal)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 227 / 255, green: 158 / 225, blue: 16 / 255, alpha: 1.0)], forState:.Selected)
         
     }
     

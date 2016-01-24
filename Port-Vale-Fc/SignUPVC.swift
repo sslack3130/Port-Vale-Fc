@@ -58,11 +58,13 @@ class SignUPVC: UIViewController {
                     
                     DataService.ds.REF_BASE.authUser(email, password: passwrd, withCompletionBlock: {error, authData in
                         
-                        print(authData.provider)
-                    let newUser = [
-                        "provider": authData.provider,
-                        "displayName": self.fullNameTxt.text]
-                    DataService.ds.REF_BASE.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser)
+//                    let user = [
+//                        "provider": authData.provider!,
+//                        "displayName": self.fullNameTxt.text]
+                        
+                        let user = ["provider": authData.provider!]
+                        DataService.ds.createNewUser(authData.uid, user: user)
+                       
                         
                         })
                     

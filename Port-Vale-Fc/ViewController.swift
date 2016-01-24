@@ -113,6 +113,10 @@ class ViewController: UIViewController {
                     } else {
                         
                         print("Logged in")
+                        
+                        let user = ["provider": authData.provider!]
+                        DataService.ds.createNewUser(authData.uid, user: user)
+                        
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }

@@ -24,10 +24,15 @@
 		0FBFBADC1C4F04A600E9E09B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFBADB1C4F04A600E9E09B /* Constants.swift */; };
 		0FBFBADE1C4F081E00E9E09B /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFBADD1C4F081E00E9E09B /* DesignButton.swift */; };
 		0FBFBAE01C50235100E9E09B /* DesignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFBADF1C50235100E9E09B /* DesignTextField.swift */; };
+		0FCE87FA1C55067A003D9B1D /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCE87F91C55067A003D9B1D /* Posts.swift */; };
 		0FD5A5341C503245002A4915 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5A5331C503245002A4915 /* DataService.swift */; };
 		0FD5A5361C504E3E002A4915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD5A5351C504E3E002A4915 /* Assets.xcassets */; };
 		0FD5A5381C504F86002A4915 /* LiveScoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5A5371C504F86002A4915 /* LiveScoresVC.swift */; };
 		0FD5A53C1C505026002A4915 /* DesignTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5A53B1C505026002A4915 /* DesignTabBar.swift */; };
+		0FF964FD1C538C130015424A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF964FC1C538C130015424A /* iAd.framework */; };
+		0FF964FF1C5411C80015424A /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF964FE1C5411C80015424A /* MoreCell.swift */; };
+		0FF965011C5412F00015424A /* ChatZoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF965001C5412F00015424A /* ChatZoneVC.swift */; };
+		0FF965031C5415380015424A /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF965021C5415380015424A /* ChatCell.swift */; };
 		1436FD2F52F7D53844F247BD /* Pods_Port_Vale_Fc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F61807E1AC2AFE84A7397 /* Pods_Port_Vale_Fc.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +56,15 @@
 		0FBFBADB1C4F04A600E9E09B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FBFBADD1C4F081E00E9E09B /* DesignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 		0FBFBADF1C50235100E9E09B /* DesignTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignTextField.swift; sourceTree = "<group>"; };
+		0FCE87F91C55067A003D9B1D /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		0FD5A5331C503245002A4915 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0FD5A5351C504E3E002A4915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD5A5371C504F86002A4915 /* LiveScoresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoresVC.swift; sourceTree = "<group>"; };
 		0FD5A53B1C505026002A4915 /* DesignTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignTabBar.swift; sourceTree = "<group>"; };
+		0FF964FC1C538C130015424A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		0FF964FE1C5411C80015424A /* MoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
+		0FF965001C5412F00015424A /* ChatZoneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatZoneVC.swift; sourceTree = "<group>"; };
+		0FF965021C5415380015424A /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		227F61807E1AC2AFE84A7397 /* Pods_Port_Vale_Fc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Port_Vale_Fc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A53A971440144AED481425 /* Pods-Port-Vale-Fc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Port-Vale-Fc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Port-Vale-Fc/Pods-Port-Vale-Fc.debug.xcconfig"; sourceTree = "<group>"; };
 		AD96693A535B6BDD573B6265 /* Pods-Port-Vale-Fc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Port-Vale-Fc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Port-Vale-Fc/Pods-Port-Vale-Fc.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF964FD1C538C130015424A /* iAd.framework in Frameworks */,
 				0FBFBACD1C4EFCDD00E9E09B /* FBSDKLoginKit.framework in Frameworks */,
 				0FBFBACC1C4EFCDD00E9E09B /* FBSDKCoreKit.framework in Frameworks */,
 				0FBFBACE1C4EFCDD00E9E09B /* FBSDKShareKit.framework in Frameworks */,
@@ -114,6 +125,7 @@
 		0FBFBAC21C4EEEA500E9E09B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FCE87F91C55067A003D9B1D /* Posts.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -126,6 +138,8 @@
 				0FBFBADD1C4F081E00E9E09B /* DesignButton.swift */,
 				0FBFBADF1C50235100E9E09B /* DesignTextField.swift */,
 				0FD5A53B1C505026002A4915 /* DesignTabBar.swift */,
+				0FF964FE1C5411C80015424A /* MoreCell.swift */,
+				0FF965021C5415380015424A /* ChatCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -158,6 +172,7 @@
 				0FBFBAB21C4EE5DB00E9E09B /* ViewController.swift */,
 				0FD5A5371C504F86002A4915 /* LiveScoresVC.swift */,
 				0F9BB65A1C52D2B6001ACC60 /* SignUPVC.swift */,
+				0FF965001C5412F00015424A /* ChatZoneVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -182,6 +197,7 @@
 		9B8599034D859E3B2496B6C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FF964FC1C538C130015424A /* iAd.framework */,
 				227F61807E1AC2AFE84A7397 /* Pods_Port_Vale_Fc.framework */,
 			);
 			name = Frameworks;
@@ -313,15 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF965011C5412F00015424A /* ChatZoneVC.swift in Sources */,
 				0FBFBADC1C4F04A600E9E09B /* Constants.swift in Sources */,
 				0FD5A53C1C505026002A4915 /* DesignTabBar.swift in Sources */,
 				0F9BB65B1C52D2B6001ACC60 /* SignUPVC.swift in Sources */,
 				0FBFBAC71C4EF6D700E9E09B /* Login.swift in Sources */,
 				0FBFBADA1C4F047400E9E09B /* Design.swift in Sources */,
 				0FBFBADE1C4F081E00E9E09B /* DesignButton.swift in Sources */,
+				0FCE87FA1C55067A003D9B1D /* Posts.swift in Sources */,
 				0FBFBAB31C4EE5DB00E9E09B /* ViewController.swift in Sources */,
 				0FBFBAE01C50235100E9E09B /* DesignTextField.swift in Sources */,
+				0FF964FF1C5411C80015424A /* MoreCell.swift in Sources */,
 				0FBFBAB11C4EE5DB00E9E09B /* AppDelegate.swift in Sources */,
+				0FF965031C5415380015424A /* ChatCell.swift in Sources */,
 				0FD5A5381C504F86002A4915 /* LiveScoresVC.swift in Sources */,
 				0FD5A5341C503245002A4915 /* DataService.swift in Sources */,
 			);
