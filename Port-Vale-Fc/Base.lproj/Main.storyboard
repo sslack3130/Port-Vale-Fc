@@ -419,7 +419,7 @@
             </objects>
             <point key="canvasLocation" x="23" y="396"/>
         </scene>
-        <!--Calendar-->
+        <!--League Table-->
         <scene sceneID="iec-R8-6F7">
             <objects>
                 <viewController id="yyq-9O-YKd" sceneMemberID="viewController">
@@ -466,7 +466,7 @@
                             <constraint firstItem="LdB-zp-kA5" firstAttribute="top" secondItem="2ei-BP-cVU" secondAttribute="top" id="mWk-6C-LBD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="scores" id="vE6-0j-sfc" customClass="DesignTabBar" customModule="Port_Vale_Fc" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="League Table" image="LeagueTabel" id="vE6-0j-sfc" customClass="DesignTabBar" customModule="Port_Vale_Fc" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.9882352941176471" green="0.82352941176470584" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
@@ -597,7 +597,7 @@
                             <constraint firstItem="cRI-4F-DX4" firstAttribute="centerX" secondItem="Iqg-Tm-ZU6" secondAttribute="centerX" id="hBx-qf-U6V"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Live Scores" image="LiveScores" selectedImage="LiveScores" id="X6r-c1-a8c" customClass="DesignTabBar" customModule="Port_Vale_Fc" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="Live Scores" image="score" id="X6r-c1-a8c" customClass="DesignTabBar" customModule="Port_Vale_Fc" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.99607843137254903" green="0.792156862745098" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
@@ -683,13 +683,13 @@
                         <segue destination="zOe-va-Wq7" kind="relationship" relationship="viewControllers" id="WWP-87-8mu"/>
                         <segue destination="UmZ-G6-J6x" kind="relationship" relationship="viewControllers" id="uDc-WY-gj9"/>
                         <segue destination="yyq-9O-YKd" kind="relationship" relationship="viewControllers" id="ON4-Vk-UZD"/>
-                        <segue destination="u1h-pe-q0T" kind="relationship" relationship="viewControllers" id="jPN-8h-rnO"/>
                         <segue destination="mZy-IP-Vd6" kind="relationship" relationship="viewControllers" id="Pux-Gv-cga"/>
+                        <segue destination="u1h-pe-q0T" kind="relationship" relationship="viewControllers" id="jPN-8h-rnO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Zg-wJ-3Jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="374"/>
+            <point key="canvasLocation" x="960" y="374"/>
         </scene>
         <!--Chat Zone-->
         <scene sceneID="4ft-oe-N0J">
@@ -709,23 +709,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cN0-WF-EYL">
                                         <rect key="frame" x="13" y="8" width="560" height="48"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Have you're Say!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmr-Id-D3T" customClass="DesignTextField" customModule="Port_Vale_Fc" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="453" height="48"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Have you're Say!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmr-Id-D3T" customClass="DesignTextField" customModule="Port_Vale_Fc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="500" height="48"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="tkw-8u-9JB">
-                                                <rect key="frame" x="463" y="0.0" width="37" height="48"/>
-                                                <gestureRecognizers/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="37" id="syM-bP-Lje"/>
-                                                    <constraint firstAttribute="height" constant="37" id="x4H-Lz-H9Y"/>
-                                                </constraints>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="Tzr-FD-W4A" appends="YES" id="bRp-j8-6Oi"/>
-                                                </connections>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65i-zV-YRD" customClass="DesignButton" customModule="Port_Vale_Fc" customModuleProvider="target">
                                                 <rect key="frame" x="510" y="0.0" width="50" height="48"/>
                                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -899,7 +888,6 @@
                     <navigationItem key="navigationItem" title="Chat Zone" id="LRO-Jv-nQb"/>
                     <connections>
                         <outlet property="postTextField" destination="qmr-Id-D3T" id="3bK-l7-4VD"/>
-                        <outlet property="selectImgBtn" destination="tkw-8u-9JB" id="fjT-r0-We1"/>
                         <outlet property="tableView" destination="NeB-fd-cOF" id="Zhd-mt-dwG"/>
                     </connections>
                 </viewController>
@@ -937,11 +925,17 @@
             </objects>
             <point key="canvasLocation" x="1746" y="1198"/>
         </scene>
-        <!--Item-->
+        <!--ChatZone-->
         <scene sceneID="IWI-oU-vZU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mZy-IP-Vd6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="WgZ-PG-qIE"/>
+                    <tabBarItem key="tabBarItem" title="ChatZone" image="ChatZone" id="WgZ-PG-qIE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99607843137254903" green="0.792156862745098" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="§" id="52e-Fb-kD0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -962,14 +956,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ChatZone" width="30" height="30"/>
         <image name="F_icon" width="200" height="200"/>
+        <image name="LeagueTabel" width="30" height="30"/>
         <image name="Like-Empty" width="700" height="700"/>
-        <image name="LiveScores" width="25" height="23"/>
         <image name="PVLogo" width="746" height="869"/>
-        <image name="camera" width="50" height="50"/>
         <image name="fixtures" width="25" height="27"/>
         <image name="profile" width="100" height="104"/>
-        <image name="scores" width="25" height="15"/>
+        <image name="score" width="30" height="30"/>
         <image name="§" width="746" height="869"/>
     </resources>
     <inferredMetricsTieBreakers>

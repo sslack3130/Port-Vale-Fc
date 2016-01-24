@@ -9,23 +9,18 @@
 import UIKit
 import Firebase
 
-class ChatZoneVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ChatZoneVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var postTextField: DesignTextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var selectImgBtn: UIImageView!
     var posts = [Posts]()
     
-    var imagePicker: UIImagePickerController!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
-       
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
          print(snapshot.value)
@@ -50,11 +45,6 @@ class ChatZoneVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
             self.tableView.reloadData()
         })
 
-    }
-    
-    @IBAction func selectImg(sender: UITapGestureRecognizer) {
-        presentViewController(imagePicker, animated: true, completion: nil)
-        
     }
     
     @IBAction func postBtn(sender: AnyObject) {
@@ -87,12 +77,6 @@ class ChatZoneVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
-    }
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        
-        imagePicker.dismissViewControllerAnimated(true, completion: nil)
-        selectImgBtn.image = image
     }
     
     func postToFirebase(){
